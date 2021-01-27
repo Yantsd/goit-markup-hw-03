@@ -85,8 +85,8 @@ align-items: center;
 
 .logotype {
     margin-right: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /*padding-top: 32px;*/
+    /*padding-bottom: 32px;*/
 
     font-family: var(--title-font);
     font-weight: 700;
@@ -123,6 +123,7 @@ align-items: center;
 }
 
 .contacts-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -136,7 +137,8 @@ align-items: center;
 /* ========== END HEADER ========== */
 
 /* ========== HERO ========== */
-.hero .container {
+
+.hero {
     padding-bottom: 200px;
     padding-top: 200px;
 
@@ -178,7 +180,7 @@ align-items: center;
 
 /* ========== FEATURE ========== */
 
-.feature .container {
+.feature {
     display: flex;
     align-items: center;
     padding-bottom: 91px;
@@ -217,7 +219,7 @@ align-items: center;
 
 /* ========== WHAT WE DO ========== */
 
-.we-do .container {
+.we-do {
     padding-bottom: 94px;
 }
 
@@ -245,7 +247,7 @@ align-items: center;
 
 /* ========== OUR TEAM ========== */
 
-.our-team .container {
+.our-team {
     padding-top: 94px;
     padding-bottom: 105px;
 }
@@ -305,7 +307,7 @@ align-items: center;
 
 /* ========== FOOTER ========== */
 
-.footer .container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -352,7 +354,13 @@ align-items: center;
 }
 /* ========== END FOOTER ========== */
 
-/* ========== HEADER PORTFOLIO ========== */
+/* ========== PORTFOLIO ========== */
+
+.portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+   
+}
 
 .portfolio-link:hover, 
 .portfolio-link:focus {
@@ -374,11 +382,7 @@ align-items: center;
     color: var(--accent-color)
 }
 
-/* ========== END HEADER PORTFOLIO ========== */
-
-/* ========== HERO PORTFOLIO ========== */
-
-.buttons .container { 
+.buttons { 
     display: flex;
     justify-content: center;
     padding-top: 91px;
@@ -389,12 +393,14 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .btn-portfolio {
     padding: 6px 22px;
     margin-right: 8px;
 
+    font-family :inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -412,18 +418,10 @@ align-items: center;
    
 }
 
-/* ========== END HERO PORTFOLIO ========== */
-
-/* ========== PORTFOLIO ========== */
-
-.portfolio .container {
-    padding-bottom: 98px;
-}
-
 .portfolio-list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .portfolio-list-item {
@@ -444,13 +442,11 @@ align-items: center;
     margin-bottom: 0;
 }
 
-.portfolio-img {
-margin-bottom: 20px;
+.card-desk {
+    padding: 20px 24px 20px 24px;
 }
 
 .portfolio-subtitle {
-    margin-left: 24px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -460,8 +456,6 @@ margin-bottom: 20px;
 }
 
 .portfolio-desk {
-    margin-left: 24px;    
-    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 16px;
